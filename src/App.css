@@ -22,9 +22,22 @@
 }
 
 body{
-  background-color: #A64AC9;
-  color: white;
+  /* background-color: #A64AC9; */
+  background-image: url("./Assets/sewing.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: brown;
   font-size: 2.5rem;
+}
+.containerMain{
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.645);
+  width: 70%;
+  padding: 3rem;
 }
 .title{
   color: white;
@@ -43,7 +56,8 @@ li {
   
 }
 nav{
-  background-color: #17E9E0;
+  /* background-color: #17E9E0; */
+  background-color: rgba(0, 0, 0, 0.831);
   padding: 3rem;
   margin: 3rem;
 }
@@ -56,11 +70,11 @@ nav li a {
 /* .workshopContainer{
   margin: auto 0;
 } */
-.cardContainer{
+/* .cardContainer{
   display: flex;
   justify-content:center;
-  /* width: 50%; */
-}
+  width: 50%;
+} */
 /* .workshopLi{
   display: flex;
   justify-content: center;
@@ -68,7 +82,8 @@ nav li a {
 
 .workshopCard{
   color: gray ;
-  background-color: #F5E6CC;
+  /* background-color: #F5E6CC; */
+  background-color: rgba(255, 255, 255, 0.733);
   width: 500px;
   height: 400px;
   border-radius: 20px;
@@ -84,7 +99,8 @@ nav li a {
 .button{
   width: 100px;
   height: 40px;
-  background-color: #FCCD04;
+  /* background-color: #FCCD04; */
+  background-color: brown;
   border-radius: 20px;
   box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
   margin: 40px;
@@ -116,9 +132,11 @@ label, strong{
 
 #addNewWorkshopCard{
   /* display: block; */
-  background-color: #F5E6CC;
-  width: 600px;
-  border-radius: 50px;
+  /* background-color: #F5E6CC; */
+  background-color: rgba(0, 0, 0, 0.765);
+  padding: 2rem;
+  width: 700px;
+  border-radius: 30px;
   
 }
 form{
@@ -149,7 +167,8 @@ form{
 .formReg{
   width: 700px;
   height: 950px;
-  background-color:#FCCD04;
+  margin: 2rem;
+  background-color:rgba(0, 0, 0, 0.729);
   border-radius: 70px;
   box-shadow: 0 0 10px 5px lightgray;
   /* margin: 30rem; */
