@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route,  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,  } from "react-router-dom";
 import Navigation from "./Components/Navigation";
+import Footer from "./Components/Footer";
 import Home from "./Views/Home";
 import Create from "./Views/Create";
 import Workshops from "./Views/Workshops";
@@ -19,7 +20,6 @@ function App() {
   const [link, setLink] = useState("");
 
   // const [ searchTerm, setSearchTerm ] =useState("");
-
   //export const FormContext = createContext();
 
   useEffect(() => {
@@ -57,11 +57,9 @@ function App() {
       },
     ]
   }
-
   const updateWorkshopName = newName => {
     setName(newName);
   }
-
   const updateWorkshopWorkshop = newWorkshop => {
     setWorkshop(newWorkshop);
   }
@@ -77,8 +75,6 @@ function App() {
   const updateWorkshopLink = newLink => {
     setLink(newLink);
   }
-
-
   const updateWorkshop = newWorkshop => {
     setWorkshops(workshops.concat(newWorkshop));
     setName("");
@@ -88,10 +84,6 @@ function App() {
     setPrice("");
     setLink("");
   }  
-  
-  // const handleChangeSearch =(event) =>{
-  //     setSearchTerm(event.target.value)
-  // }
   return (
     <div className="App">
       <Router>
@@ -99,44 +91,29 @@ function App() {
           <Navigation />
         </header>
         <main>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/create" exact>
-              <Create />
-            </Route>
-            <Route path="/workshops" exact>
-              <Workshops
-                workshops={workshops}
-                name={name}
-                workshop={workshop}
-                location={location}
-                date={date}
-                price={price}
-                link={link}
-                updateName={updateWorkshopName}
-                updateWorkshop={updateWorkshopWorkshop}
-                updateLocation={updateWorkshopLocation}
-                updateDate={updateWorkshopDate}
-                updatePrice={updateWorkshopPrice}
-                updateLink={updateWorkshopLink}
-                update={updateWorkshop}
-
-                
-                // searchTerm={searchTerm}
-                // handleChangeSearch={handleChangeSearch}
-              />
-              
-              {/* <FormContext.Provider value={{
-                name:name
-            }} >
-              <Workshops />
-            </FormContext.Provider> */}
-            </Route>
-            
-      
-            <Route path="*" component={NotFound} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/create" element={<Create />} />
+            <Route path="/workshops" element={<Workshops 
+              workshops={workshops}
+              name={name}
+              workshop={workshop}
+              location={location}
+              date={date}
+              price={price}
+              link={link}
+              updateName={updateWorkshopName}
+              updateWorkshop={updateWorkshopWorkshop}
+              updateLocation={updateWorkshopLocation}
+              updateDate={updateWorkshopDate}
+              updatePrice={updateWorkshopPrice}
+              updateLink={updateWorkshopLink}
+              update={updateWorkshop}
+            />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </main>
+        <Footer />
       </Router>
     </div>
   );

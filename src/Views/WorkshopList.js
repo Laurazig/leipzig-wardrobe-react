@@ -11,12 +11,12 @@ const WorkshopList = props => {
                         return (
                             <li className="workshopLi" key={obj.id} >
                                 <div className="workshopCard">
-                                    <div><strong>Name: (workshoplist.js)</strong> {obj.name} </div>
+                                    <div><strong>Name: </strong> {obj.name} </div>
                                     <div><strong>Workshop:</strong> {obj.workshop} </div>
                                     <div><strong>Location:</strong> {obj.location}</div>
                                     <div><strong>Date:</strong> {obj.date}</div>
                                     <div><strong>Price:</strong> {obj.price}</div>
-                                    <div className="button"><a target="_blank" href={obj.link} >link</a></div>
+                                    <div className="button"><a target="_blank" rel="noreferrer" href={obj.link} >link</a></div>
                                 </div>
                             </li>
                         )

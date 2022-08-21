@@ -1,19 +1,13 @@
-import React, { useState } from "react";
-import Shibori from "../Assets/ShiboriRound.jpg"
-// import { Link } from "react-router-dom";
+// import React, { useState } from "react";
 import WorkshopList from "./WorkshopList";
-import FormRegister from "../Components/FormRegister";
-//import SearchResults from "./Components/SearchResults"
+//import FormRegister from "../Components/FormRegister";
 
 const Workshops = props => {
-
-
     return (
         <div className="containerMain">
             <div className="container">
                 <div className="workshopContainer" >
                     <h1>Workshops in Leipzig</h1>
-                    <img className="img" src={Shibori} />
                     <WorkshopList
                         workshops={props.workshops}
                         name={props.name}
@@ -30,14 +24,7 @@ const Workshops = props => {
                         updateLink={props.updateLink}
                         update={props.update}
                     />
-                    <FormRegister />
-                    {/* <SearchResults 
-                workshops={props.workshops}
-                searchTerm={searchTerm}
-                handleChangeSearch={handleChangeSearch}
-            
-            
-            /> */}
+                    {/* <FormRegister /> */}
                 </div>
             </div>
         </div>

@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../Assets/LWlogo.jpg"
+//import logo from "../Assets/LWlogo.jpg"
 
 
 const Navigation = () => {
     return (
         <div className="nav">
-            <div className="logo">
+            {/* <div className="logo">
                 <Link to="/">
                     <img className="nav_img" src={logo} alt="Leipzig Wardrobe logo"/>
                 </Link>
-            </div>
+            </div> */}
+            <div id="leipzigWardHeader">Leipzig Wardrobe</div>
             <nav>
                 <ul>
                     <li >
