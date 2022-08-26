@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from "react";
 import MakersCards from "./MakersCards.js"
 import "./makers.css"
+import makersDB from "../../data.json"
 
+let filteredDate= []
+
+makersDB.forEach(item => {
+  console.log(item)
+  let foundItem=filteredDate.some(element => element.clothesItem === item.clothesItem)
+  if(!foundItem){
+    filteredDate.push(item)
+  }
+})
+console.log(filteredDate)
 const Makers = () => {
   const [makers, setMakers] = useState([])
-  const [maker, setMaker] = useState([]);
+  //const [maker, setMaker] = useState([]);
   const [searchName, setSearchName] = useState("");
   const [searchZip, setSearchZip] = useState("");
-  const [searchClothesItem, setSearchClothesItem] = useState("");
+  //const [searchClothesItem, setSearchClothesItem] = useState("");
   const [clothes, setClothes] = useState(["All Clothes"]);
 
   useEffect(() => {
@@ -52,7 +63,7 @@ const Makers = () => {
       <div className="container">
         <div>
           <h1>Search for clothes made in Leipzig</h1>
-          <div>Search by postcode, name or item.</div>
+          <div>Search by name, postcode or item.</div>
         </div>
         <div className="searchZone">
           <div className="SearchName" >
@@ -77,7 +88,7 @@ const Makers = () => {
             <input
               type="text"
               className="form-control"
-              placeholder="search by zip"
+              placeholder="search by postcode"
               value={searchZip}
             // onChange={onChangeSearchZip}
             />
@@ -94,9 +105,10 @@ const Makers = () => {
           <div className="searchDropdown">
             {/* <select onChange={onChangeSearchClothesItem}> */}
             <select>
-              {clothes.map((clothesItem, index) => {
+              {filteredDate.map((maker, index) => {
+              
                 return (
-                  <option value={clothesItem} key={index}> {clothesItem.substring(0, 20)} </option>
+                  <option value={maker.clothesItem} key={index}> {maker.clothesItem.substring(0, 20)} </option>
                 )
               })}
             </select>
@@ -111,7 +123,10 @@ const Makers = () => {
             </div>
           </div>
         </div>
-        <MakersCards makers={makers} />
+        <div>
+          
+        </div>
+        <MakersCards />
       </div>
     </div>
   )

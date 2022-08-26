@@ -1,11 +1,12 @@
 import React from "react";
+import makersDB from "../../data.json"
 
 const MakersCards = props => {
     return (
         <div className="cardContainer">
             <ul id="workshopListUL">
                 {
-                    props.makers.map((maker, index) => {
+                    makersDB.map((maker, index) => {
                         const address = `${maker.address.building} ${maker.address.street}, ${maker.address.postcode}`;
                         return (
                             <li className="workshopLi" key={index} >
