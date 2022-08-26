@@ -1,0 +1,83 @@
+[
+    {
+        "_id": "62f0271d932613db1ae03b75",
+        "name": "Rosentreter Modedesign",
+        "address": {
+            "building": "93",
+            "street": "Karl-Heine-Str.",
+            "zipcode": "04229"
+        },
+        "clothesItem": "trousers, shirts"
+    },
+    {
+        "_id": "62f02836932613db1ae03b76",
+        "name": " Sascha Halm Maßschuhe",
+        "address": {
+            "building": "41",
+            "street": "Merseburgerstraße",
+            "zipcode": "04177"
+        },
+        "clothesItem": "shoes"
+    },
+    {
+        "_id": "62f02970932613db1ae03b77",
+        "name": "Craft Pigeon",
+        "address": {
+            "building": "61",
+            "street": "Jahnallee",
+            "zipcode": "04177"
+        },
+        "clothesItem": "scarfs"
+    },
+    {
+        "_id": "62f6541eefd36794d7360408",
+        "name": "Rosentreter Modedesign3",
+        "clothesItem": "trousers, shirts",
+        "address": {
+            "building": 93,
+            "street": "Karl-Heine-Str.",
+            "zipcode": "04229"
+        }
+    },
+    {
+        "_id": "62f6541eefd36794d7360407",
+        "name": "Rosentreter Modedesign2",
+        "clothesItem": "trousers, shirts",
+        "address": {
+            "building": 93,
+            "street": "Karl-Heine-Str.",
+            "zipcode": "04229"
+        }
+    },
+    {
+        "_id": "62f6541eefd36794d7360409",
+        "name": "Rosentreter Modedesign4",
+        "clothesItem": "trousers, shirts",
+        "address": {
+            "building": 93,
+            "street": "Karl-Heine-Str.",
+            "zipcode": "04229"
+        }
+    },
+    {
+        "_id": "62f6541eefd36794d736040a",
+        "name": "Rosentreter Modedesign5",
+        "clothesItem": "trousers, shirts",
+        "address": {
+            "building": 93,
+            "street": "Karl-Heine-Str.",
+            "zipcode": "04229"
+        }
+    },
+    {
+        "_id": "62f6541eefd36794d736040b",
+        "name": "Rosentreter Modedesign6",
+        "clothesItem": "trousers, shirts",
+        "address": {
+            "building": 93,
+            "street": "Karl-Heine-Str.",
+            "zipcode": "04229"
+        }
+    }
+]
+
