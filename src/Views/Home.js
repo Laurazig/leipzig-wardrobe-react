@@ -11,7 +11,7 @@ const Home = () => {
                 {/* <img className="img" src={ShiboriShirt} alt="beautiful T-shirt made from bedsheet and tye-dyed" /> */}
                 <div className="map">
                     <iframe id="iFrame_Map" title="map" src="https://www.google.com/maps/d/embed?mid=16Rp_3MkkmZqyOnMjoBz6a6aGaL9gRkeo&ehbc=2E312F"
-                        width="640" height="480"></iframe>
+                        ></iframe>
                 </div>
             </div>
         </div>
