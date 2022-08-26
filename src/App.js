@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route,  } from "react-router-dom";
-import Navigation from "./Components/Navigation";
-import Footer from "./Components/Footer";
-import Home from "./Views/Home";
-import Makers from "./Views/Makers"
-import Workshops from "./Views/Workshops";
-import './App.css';
-import NotFound from "./Views/NotFound";
+import React, { useState, useEffect } from "react"
+import { BrowserRouter as Router, Routes, Route,  } from "react-router-dom"
+import Navigation from "./Components/Navigation"
+import Footer from "./Components/Footer"
+import Home from "./Views/Home"
+import Makers from "./Views/makers/Makers"
+import Workshops from "./Views/Workshops"
+import './App.css'
+import NotFound from "./Views/NotFound"
 
 
 //state for: add new workshop (form.js)
