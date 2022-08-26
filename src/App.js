@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route,  } from "react-router-dom";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
 import Home from "./Views/Home";
-import Create from "./Views/Create";
+import Makers from "./Views/Makers"
 import Workshops from "./Views/Workshops";
 import './App.css';
 import NotFound from "./Views/NotFound";
@@ -93,7 +93,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/create" element={<Create />} />
+            <Route path="/makers" element={<Makers />} />
             <Route path="/workshops" element={<Workshops 
               workshops={workshops}
               name={name}
