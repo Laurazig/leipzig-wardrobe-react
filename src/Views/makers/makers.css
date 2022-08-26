@@ -3,4 +3,53 @@
     justify-content:space-between;
     margin: 3rem;
 }
+.cardContainer{
+    /* background-color: rgba(255, 255, 255, 0.301); */
+    display: flex;
+    justify-content: center;
+}
+#workshopListUL {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  width: 99%;
+}
+.workshopCard{
+    color: gray ;
+    background-color: rgba(255, 255, 255, 0.733);
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    padding: 10px; 
+    overflow: hidden;
+  }
+  /* #workshopCardInside{
+    background-color: aquamarine;
+    height: 100%;
+    
+  } */
+  .makerLabel{
+    /* outline:auto; */
+    background-color: rgba(0, 0, 0, 0.096);
+    margin: 0.5rem;
+  }
+  #buttonMakerLink{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 20px;
+  }
+  .buttonMakerMap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: brown;
+  border-radius: 20px;
+  box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
+  color: white;
+  }
 

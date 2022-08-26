@@ -3,12 +3,12 @@ import MakersCards from "./MakersCards.js"
 import "./makers.css"
 import makersDB from "../../data.json"
 
-let filteredDate= []
+let filteredDate = []
 
 makersDB.forEach(item => {
   console.log(item)
-  let foundItem=filteredDate.some(element => element.clothesItem === item.clothesItem)
-  if(!foundItem){
+  let foundItem = filteredDate.some(element => element.clothesItem === item.clothesItem)
+  if (!foundItem) {
     filteredDate.push(item)
   }
 })
@@ -106,7 +106,7 @@ const Makers = () => {
             {/* <select onChange={onChangeSearchClothesItem}> */}
             <select>
               {filteredDate.map((maker, index) => {
-              
+
                 return (
                   <option value={maker.clothesItem} key={index}> {maker.clothesItem.substring(0, 20)} </option>
                 )
@@ -123,10 +123,9 @@ const Makers = () => {
             </div>
           </div>
         </div>
-        <div>
-          
+        <div className="makersCards">
+          <MakersCards />
         </div>
-        <MakersCards />
       </div>
     </div>
   )

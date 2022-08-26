@@ -1,11 +1,11 @@
 [
     {
         "_id": "62f0271d932613db1ae03b75",
-        "name": "***Rosentreter Modedesign",
+        "name": "Rosentreter Modedesign",
         "address": {
             "building": "93",
             "street": "Karl-Heine-Str.",
-            "zipcode": "04229"
+            "postcode": "04229"
         },
         "clothesItem": "trousers, shirts"
     },
@@ -15,7 +15,7 @@
         "address": {
             "building": "41",
             "street": "Merseburgerstraße",
-            "zipcode": "04177"
+            "postcode": "04177"
         },
         "clothesItem": "shoes"
     },
@@ -25,58 +25,38 @@
         "address": {
             "building": "61",
             "street": "Jahnallee",
-            "zipcode": "04177"
+            "postcode": "04177"
         },
         "clothesItem": "scarfs"
     },
     {
         "_id": "62f6541eefd36794d7360408",
-        "name": "Rosentreter Modedesign3",
+        "name": "IHM Sustainable Fashion",
         "clothesItem": "trousers, shirts",
         "address": {
-            "building": 93,
-            "street": "Karl-Heine-Str.",
-            "zipcode": "04229"
+            "building": 1,
+            "street": "Gemeindeamtsstraße  ",
+            "postcode": "04177"
         }
     },
     {
         "_id": "62f6541eefd36794d7360407",
-        "name": "Rosentreter Modedesign2",
+        "name": "Küss Mich Wach",
         "clothesItem": "trousers, shirts",
         "address": {
-            "building": 93,
-            "street": "Karl-Heine-Str.",
-            "zipcode": "04229"
+            "building": 22,
+            "street": "Lauchstädter Str.",
+            "postcode": "04229"
         }
     },
     {
         "_id": "62f6541eefd36794d7360409",
-        "name": "Rosentreter Modedesign4",
-        "clothesItem": "trousers, shirts",
+        "name": "Undrowear",
+        "clothesItem": "underwear",
         "address": {
-            "building": 93,
-            "street": "Karl-Heine-Str.",
-            "zipcode": "04229"
-        }
-    },
-    {
-        "_id": "62f6541eefd36794d736040a",
-        "name": "Rosentreter Modedesign5",
-        "clothesItem": "trousers, shirts",
-        "address": {
-            "building": 93,
-            "street": "Karl-Heine-Str.",
-            "zipcode": "04229"
-        }
-    },
-    {
-        "_id": "62f6541eefd36794d736040b",
-        "name": "Rosentreter Modedesign6",
-        "clothesItem": "trousers, shirts",
-        "address": {
-            "building": 93,
-            "street": "Karl-Heine-Str.",
-            "zipcode": "04229"
+            "building": 49,
+            "street": "Naumburger Straße",
+            "postcode": "04229"
         }
     }
 ]

@@ -39,10 +39,7 @@ body{
   margin: 3rem;
   font-size: 5rem;
 }
-#workshopListUL {
-  display: flex;
-  justify-content: space-around;
-}
+
 li {
   display: inline;
   /* font-size: 1rem; */
@@ -70,28 +67,22 @@ nav li a {
   font-size: 3rem;
   color: white;
 }
-.workshopCard{
-  color: gray ;
-  background-color: rgba(255, 255, 255, 0.733);
-  width: 200px;
-  height: 280px;
-  border-radius: 20px;
-  font-size: 1.6rem;
-  padding: 20px;
-  margin: 2rem; 
-}
+
 .img{
   border-radius: 50%;
   width:500px;
 }
 .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 40px;
   background-color: brown;
   border-radius: 20px;
   box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
   margin: 40px;
-  color: grey;
+  color: white;
 }
 /* .addButton{
   width: 300px;
@@ -107,9 +98,10 @@ nav li a {
 a{
   text-decoration: none;
   color: white;
+  font-size: small;
 }
 label, strong{
-  color:brown
+  color:brown;
 }
 #addNewWorkshopCard{
   background-color: rgba(255, 255, 255, 0.765);

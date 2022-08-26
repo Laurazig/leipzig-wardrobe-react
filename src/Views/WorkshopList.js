@@ -16,7 +16,7 @@ const WorkshopList = props => {
                                     <div><strong>Location:</strong> {obj.location}</div>
                                     <div><strong>Date:</strong> {obj.date}</div>
                                     <div><strong>Price:</strong> {obj.price}</div>
-                                    <div className="button"><a target="_blank" rel="noreferrer" href={obj.link} >link</a></div>
+                                    <a target="_blank" rel="noreferrer" href={obj.link} ><div className="button">link</div></a>
                                 </div>
                             </li>
                         )

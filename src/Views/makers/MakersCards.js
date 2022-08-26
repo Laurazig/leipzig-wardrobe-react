@@ -9,12 +9,17 @@ const MakersCards = props => {
                     makersDB.map((maker, index) => {
                         const address = `${maker.address.building} ${maker.address.street}, ${maker.address.postcode}`;
                         return (
-                            <li className="workshopLi" key={index} >
+                            <li key={index} >
                                 <div className="workshopCard">
-                                    <div><strong>Name: </strong> {maker.name} </div>
-                                    <div><strong>address:</strong> {maker.address.street} {maker.address.building} {maker.address.postcode} </div>
-                                    <div><strong>clothesItem:</strong> {maker.clothesItem}</div>
-                                    <a target="_blank" rel="noreferrer" href={"http://www.google.com/maps/place/" + address} ><div className="button">View Map</div></a>
+                                    <div className="makerLabel"><strong>Name: </strong></div>
+                                    <div>{maker.name} </div>
+                                    <div className="makerLabel"><strong>address:</strong> </div>
+                                    <div>{maker.address.street} {maker.address.building} {maker.address.postcode} </div>
+                                    <div className="makerLabel"><strong>clothesItem:</strong> </div>
+                                    <div>{maker.clothesItem}</div>
+                                    <div id="workshopCardInside">
+                                        <a target="_blank" rel="noreferrer" href={"http://www.google.com/maps/place/" + address} id="buttonMakerLink"><div className="buttonMakerMap">View Map</div></a>
+                                    </div>
                                 </div>
                             </li>
                         )
