@@ -59,7 +59,6 @@ const FormRegister = props => {
                 break;
         }
     }
-
     const checkEmailFormat = () => {
         if(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\.[A-Za-z]+$/.test(userEmail)) {
             emailErrorDiv.current.className = "errorNotVisible"
@@ -67,7 +66,6 @@ const FormRegister = props => {
             emailErrorDiv.current.className = "errorVisible"
         }
     }
-
     const checkCommentLength =()=> {
         if (comment.length < 20) {
             commentLengthErrorDiv.current.className = "errorVisible"
@@ -75,8 +73,6 @@ const FormRegister = props => {
             commentLengthErrorDiv.current.className = "errorNotVisible"
         }
     }
-
-
             // const userData = event => {
             //     event.preventDefault();
             //     console.log("userName", userName);
@@ -90,8 +86,7 @@ const FormRegister = props => {
             //     setNum("");
             //     setNumChanged(false)
             //     setSelect("default");
-            //     setComment("");
-                
+            //     setComment("");  
             // }; 
     const submitForm = event => {
         event.preventDefault();
