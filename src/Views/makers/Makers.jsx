@@ -4,7 +4,6 @@ import "./makers.scss"
 import '../../sass/index.scss'
 import makersDB from "../../data.json"
 
-
 let filteredDate = []
 
 makersDB.forEach(item => {
@@ -60,6 +59,22 @@ const Makers = () => {
       }
     ]
   }
+
+  const onChangeSearchName = () => {
+    // if(value=== map all maker.name){
+    //   display card
+    // }
+  }
+
+  const findByName=()=>{
+//maker.name
+  }
+
+  const onChangeSearchZip =()=>{
+    //maker.zip
+  }
+
+
   return (
     <div className="containerMain">
       <div className="container">
@@ -74,7 +89,7 @@ const Makers = () => {
               className="form-control"
               placeholder="search by name"
               value={searchName}
-            // onChange={onChangeSearchName}
+            //onChange={onChangeSearchName}
             />
             <div className="input-group-append">
               <button
@@ -94,7 +109,7 @@ const Makers = () => {
               value={searchZip}
             // onChange={onChangeSearchZip}
             />
-            <div className="input-group-append">
+            {/* <div className="input-group-append">
               <button
                 className="btn btn-outline-secondary"
                 type="button"
@@ -102,7 +117,7 @@ const Makers = () => {
               >
                 Search
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="searchDropdown">
             {/* <select onChange={onChangeSearchClothesItem}> */}
