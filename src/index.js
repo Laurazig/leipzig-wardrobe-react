@@ -1,17 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-
-//const root = document.querySelector("#root")
-// let output = (
-//   <div>
-//     <App />
-//   </div>
-// )
-// ReactDOM.render(output,root)
-
-
+import App from './App.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
