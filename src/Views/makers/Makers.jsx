@@ -4,60 +4,30 @@ import "./makers.scss"
 import '../../sass/index.scss'
 import makersDB from "../../data.json"
 
-let filteredDate = []
+let filteredData = []
 
 makersDB.forEach(item => {
   console.log(item)
-  let foundItem = filteredDate.some(element => element.clothesItem === item.clothesItem)
+  let foundItem = filteredData.some(element => element.clothesItem === item.clothesItem)
   if (!foundItem) {
-    filteredDate.push(item)
+    filteredData.push(item)
   }
 })
-console.log(filteredDate)
+console.log(filteredData)
 const Makers = () => {
   const [makers, setMakers] = useState([])
   //const [maker, setMaker] = useState([]);
   const [searchName, setSearchName] = useState("");
   const [searchZip, setSearchZip] = useState("");
-  //const [searchClothesItem, setSearchClothesItem] = useState("");
-  const [clothes, setClothes] = useState(["All Clothes"]);
+  //const [ searchClothesItem, setSearchClothesItem ] = useState("");
+  const [ clothes, setClothes ] = useState(["All Clothes"]);
+  const [ filter, setFilter ] = useState()
 
   useEffect(() => {
     setMakers(pretendFetchMakers)
   }, []);
   const pretendFetchMakers = () => {
-    return [
-      {
-        "_id": "62f0271d932613db1ae03b75",
-        "name": "Rosentreter Modedesign",
-        "address": {
-          "building": "93",
-          "street": "Karl-Heine-Str.",
-          "postcode": "04229"
-        },
-        "clothesItem": "trousers, shirts"
-      },
-      {
-        "_id": "62f02836932613db1ae03b76",
-        "name": " Sascha Halm Maßschuhe",
-        "address": {
-          "building": "41",
-          "street": "Merseburgerstraße",
-          "postcode": "04177"
-        },
-        "clothesItem": "shoes"
-      },
-      {
-        "_id": "62f02970932613db1ae03b77",
-        "name": "Craft Pigeon",
-        "address": {
-          "building": "61",
-          "street": "Jahnallee",
-          "postcode": "04177"
-        },
-        "clothesItem": "scarfs"
-      }
-    ]
+    return 
   }
 
   const onChangeSearchName = () => {
@@ -73,8 +43,17 @@ const Makers = () => {
   const onChangeSearchZip =()=>{
     //maker.zip
   }
+  const findByZip =()=>{
+    //maker.zip
+  }
 
-
+  const onChangeSearchClothesItem = (e) => {
+    // maker.clothesItem
+    setFilter(e.target.value)
+  }
+  const findByClothesItem = () => {
+    // maker.clothesItem
+  }
   return (
     <div className="containerMain">
       <div className="container">
@@ -109,7 +88,7 @@ const Makers = () => {
               value={searchZip}
             // onChange={onChangeSearchZip}
             />
-            {/* <div className="input-group-append">
+            <div className="input-group-append">
               <button
                 className="btn btn-outline-secondary"
                 type="button"
@@ -117,19 +96,18 @@ const Makers = () => {
               >
                 Search
               </button>
-            </div> */}
+            </div>
           </div>
           <div className="searchDropdown">
-            {/* <select onChange={onChangeSearchClothesItem}> */}
-            <select>
-              {filteredDate.map((maker, index) => {
-
+            <select onChange={onChangeSearchClothesItem}>
+            
+              {filteredData.map((maker, index) => {
                 return (
                   <option value={maker.clothesItem} key={index}> {maker.clothesItem.substring(0, 20)} </option>
                 )
               })}
             </select>
-            <div className="">
+            {/* <div className="">
               <button
                 className="btn btn-outline-secondary"
                 type="button"
@@ -137,11 +115,11 @@ const Makers = () => {
               >
                 Search
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="makersCards">
-          <MakersCards />
+          <MakersCards filter={filter}/>
         </div>
       </div>
     </div>
