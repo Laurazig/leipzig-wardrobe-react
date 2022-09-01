@@ -1,17 +1,19 @@
 :root {
   font-size: 62.5%;
-  /* --Background:#F5E6CC; */
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap');
 
 * {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
+
 .App {
   text-align: center;
 }
-body{
+
+body {
   background-image: url("./Assets/sewing.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,19 +21,18 @@ body{
   color: brown;
   font-size: 1.6rem;
 }
-.containerMain{
+
+.containerMain {
   display: flex;
   justify-content: center;
 }
+
 .container {
   background-color: rgba(255, 255, 255, 0.645);
   width: 70%;
   padding: 3rem;
 }
-/* .title{
-  color: white;
-  font-size: 7rem;
-} */
+
 #leipzigWardHeader {
   background-color: rgba(255, 255, 255, 0.831);
   color: black;
@@ -40,177 +41,112 @@ body{
   font-size: 5rem;
 }
 
-
 li {
   display: inline;
-  /* font-size: 1rem; */
   color: white;
   margin: 1rem;
 }
-nav{
-  background-color: rgba(0, 0, 0, 0.831);
-  padding: 3rem;
-  margin: 3rem;
-}
-nav li a {
-  text-decoration: none;
-  font-size: 4rem;
-  color: white;
-  transition: color 0.3s ease-in-out;
-}
-.liNav:hover{
-  color: brown;
-}
-#foot{
-  background-color: rgba(0, 0, 0, 0.831);
-  padding: 3rem;
-  margin: 3rem;
-  font-size: 3rem;
-  color: white;
-}
 
-.img{
+.img {
   border-radius: 50%;
-  width:500px;
+  width: 500px;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
   font-size: small;
 }
-label, strong{
-  color:brown;
+
+label,
+strong {
+  color: brown;
 }
-#addNewWorkshopCard{
+
+#addNewWorkshopCard {
   background-color: rgba(255, 255, 255, 0.765);
   padding: 2rem;
   width: 300px;
-  border-radius: 30px; 
+  border-radius: 30px;
 }
-/* form{
-  width: 600px;
-} */
-#buttonAdd{
-  background-color: brown;
-  width: 100px;
-  height: 40px;
-  border-radius: 20px;
-  box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
-  margin: 40px;
-  color: white;
-}
-/* .form_div{
-  display: block;
-} */
-.divInput{
-  margin: 2rem;
-}
-/* .divFormReg{
-  display: flex;
-  justify-content: center;
-} */
-/* .formReg{
-  width: 700px;
-  height: 950px;
-  margin: 2rem;
-  background-color:rgba(0, 0, 0, 0.729);
-  border-radius: 70px;
-  box-shadow: 0 0 10px 5px lightgray;
-} */
 
-#h2AddWorkshop{
-  color:brown;
+.divInput {
+  margin: 2rem;
 }
-input{
+
+#h2AddWorkshop {
+  color: brown;
+}
+
+input {
   border-radius: 5px;
   height: 35px;
   display: block;
   justify-content: center;
 }
-/* form div {
-  margin: 30px;
-}
-.errorVisible{
-  display:block;
-  color: red;
-  font-size: 1.5rem;
-  border: 0px;
-  margin: 0px;
-}
-.errorNotVisible{
-  display:none;
-} */
-/* select{
-  font-size: 2.5rem;
-} */
-/* input[type=radio] {
-  border: 0px;
-  width: 4%;
-  height: 2em;
-} */
-/* .workshopFormBlock{
-  display: block;
-} */
-iframe{
-  width:640px;
-   height:480px
+
+iframe {
+  width: 640px;
+  height: 480px
 }
 
-@media (max-width:479px){
-  /* body{
-    width: fit-content;
-  } */
-  /* header{
-    width: fit-content;
-  } */
+@media (max-width:479px) {
   #leipzigWardHeader {
     padding: 2rem;
     margin: 0rem;
     font-size: 4rem;
   }
-  nav{
+
+  nav {
     padding: 0.5rem;
     margin: 0;
     width: 100%;
   }
+
   nav li a {
     font-size: 1.6rem;
-  } 
-  .container{
+  }
+
+  .container {
     width: 95%;
   }
+
   /* .map{
 width: fit-content;
   } */
-  iframe{
-    width:100%;
-     height:480px
+  iframe {
+    width: 100%;
+    height: 480px
   }
 
-  #foot{
+  #foot {
     margin: 0;
     padding: 0.5rem;
     font-size: 1.6rem;
   }
-  
-  .cardContainer{
+
+  .cardContainer {
     display: block;
     margin: 0;
   }
-  .searchZone{
+
+  .searchZone {
     display: block;
     margin: 0;
   }
-  .SearchName, .searchPostcode, .searchDropdown{
+
+  .SearchName,
+  .searchPostcode,
+  .searchDropdown {
     /* background-color: aqua; */
     display: block;
     justify-content: center;
     align-items: center;
     margin: 2rem;
   }
-  .form-control{
+
+  .form-control {
     display: inline;
-margin: 0.5rem;
+    margin: 0.5rem;
   }
-} 
+}
