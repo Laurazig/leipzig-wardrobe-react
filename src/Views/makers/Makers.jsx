@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import MakersCards from "./MakersCards.jsx"
-import "./makers.scss"
-//import '../../../scss/index.scss'
 import makersDB from "../../data.json"
 
 let filteredData = []
