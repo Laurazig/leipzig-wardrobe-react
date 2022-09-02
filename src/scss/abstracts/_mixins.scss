@@ -10,7 +10,8 @@
     $top: 0,
     $bottom: 0,
     $left: 0,
-    $right: 0) {
+    $right: 0
+    ) {
     position: relative;
 
     &::#{$loc} {
@@ -44,3 +45,10 @@
 
     }
 }
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
