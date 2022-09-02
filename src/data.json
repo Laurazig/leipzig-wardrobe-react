@@ -7,17 +7,20 @@
             "street": "Karl-Heine-Str.",
             "postcode": "04229"
         },
-        "clothesItem": "trousers, shirts"
+        "clothesItem": "trousers, shirts",
+        "url": "https://rosentreter-modedesign.de/"
     },
     {
         "_id": "62f02836932613db1ae03b76",
-        "name": " Sascha Halm Maßschuhe",
+        "name": "Sascha Halm Maßschuhe",
+        "keyWords":"Plagwitz, shoes, handmade",
         "address": {
             "building": "41",
             "street": "Merseburgerstraße",
             "postcode": "04177"
         },
-        "clothesItem": "shoes"
+        "clothesItem": "shoes",
+        "url":"https://www.handwerkskunst-leipzig.de/portfolio-item/sascha-halm/"
     },
     {
         "_id": "62f02970932613db1ae03b77",
@@ -27,37 +30,52 @@
             "street": "Jahnallee",
             "postcode": "04177"
         },
-        "clothesItem": "scarfs"
+        "clothesItem": "scarfs",
+        "url":"https://www.robynchamberlain.com/handweberei-home"
     },
     {
         "_id": "62f6541eefd36794d7360408",
         "name": "IHM Sustainable Fashion",
-        "clothesItem": "trousers, shirts",
         "address": {
             "building": 1,
             "street": "Gemeindeamtsstraße  ",
             "postcode": "04177"
-        }
+        },
+        "clothesItem": "trousers, shirts",
+        "url":"https://www.ihm-fair-fashion.com/"
     },
     {
         "_id": "62f6541eefd36794d7360407",
         "name": "Küss Mich Wach",
-        "clothesItem": "trousers, shirts",
         "address": {
             "building": 22,
             "street": "Lauchstädter Str.",
             "postcode": "04229"
-        }
+        },
+        "clothesItem": "trousers, shirts",
+        "url":"https://kuessmichwach.de/mein-laden/"
     },
     {
         "_id": "62f6541eefd36794d7360409",
         "name": "Undrowear",
-        "clothesItem": "underwear",
         "address": {
             "building": 49,
             "street": "Naumburger Straße",
             "postcode": "04229"
-        }
+        },
+        "clothesItem": "underwear",
+        "url":"https://undrowear.de/"
+    },
+    {
+        "_id": "rad123",
+        "name": "RadRobe",
+        "address": {
+            "building": 38,
+            "street": "Gustav-Adolf-Straße",
+            "postcode": "04105"
+        },
+        "clothesItem": "skirt",
+        "url":"https://radrobe.de/"
     }
 ]
 

@@ -154,6 +154,14 @@ a {
   font-size: small;
 }
 
+#a_makers_name {
+  color: rgb(53, 52, 52);
+  font-size: medium;
+}
+#a_makers_name hover {
+  color: brown;
+}
+
 label,
 strong {
   color: brown;

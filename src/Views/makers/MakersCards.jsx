@@ -7,13 +7,13 @@ const MakersCards = props => {
         <div className="cardContainer">
             <ul id="workshopListUL">
                 {
-                   makersDB.filter(maker=>maker.clothesItem=== props.filter).map((maker, index) => {
+                   makersDB.filter(maker=>(maker.clothesItem=== props.filter)||(maker.name.includes(props.filter))||(maker.address.postcode=== props.filter)|| props.filter === "").map((maker, index) => {
                         const address = `${maker.address.building} ${maker.address.street}, ${maker.address.postcode}`;
                         return (
                             <li key={index} >
                                 <div className="workshopCard">
                                     <div className="makerLabel"><strong>Name: </strong></div>
-                                    <div>{maker.name} </div>
+                                    <div><a href={maker.url} target="_blank" rel="noreferrer" id="a_makers_name">{maker.name}</a>  </div>
                                     <div className="makerLabel"><strong>address:</strong> </div>
                                     <div>{maker.address.street} {maker.address.building} {maker.address.postcode} </div>
                                     <div className="makerLabel"><strong>clothesItem:</strong> </div>

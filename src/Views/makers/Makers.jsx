@@ -18,40 +18,29 @@ const Makers = () => {
   const [searchName, setSearchName] = useState("");
   const [searchZip, setSearchZip] = useState("");
   //const [ searchClothesItem, setSearchClothesItem ] = useState("");
-  const [ clothes, setClothes ] = useState(["All Clothes"]);
-  const [ filter, setFilter ] = useState()
+  const [clothes, setClothes] = useState(["All Clothes"]);
+  const [filter, setFilter] = useState("")
 
   useEffect(() => {
     setMakers(pretendFetchMakers)
   }, []);
   const pretendFetchMakers = () => {
-    return 
-  }
-
-  const onChangeSearchName = () => {
-    // if(value=== map all maker.name){
-    //   display card
-    // }
-  }
-
-  const findByName=()=>{
-//maker.name
-  }
-
-  const onChangeSearchZip =()=>{
-    //maker.zip
-  }
-  const findByZip =()=>{
-    //maker.zip
+    return
   }
 
   const onChangeSearchClothesItem = (e) => {
     // maker.clothesItem
     setFilter(e.target.value)
   }
-  const findByClothesItem = () => {
-    // maker.clothesItem
+  const search = () => {
+    if (searchName !== "") {
+      setFilter(searchName)
+    } else {
+      setFilter(searchZip)
+    }
   }
+
+
   return (
     <div className="containerMain">
       <div className="container">
@@ -66,13 +55,14 @@ const Makers = () => {
               className="form-control"
               placeholder="search by name"
               value={searchName}
-            //onChange={onChangeSearchName}
+              onChange={e => setSearchName(e.target.value)}
+              onFocus={e => setSearchZip("")}
             />
             <div className="input-group-append">
               <button
                 className="btn btn-outline-secondary"
                 type="button"
-              //onClick={findByName}
+                onClick={search}
               >
                 Search
               </button>
@@ -84,13 +74,14 @@ const Makers = () => {
               className="form-control"
               placeholder="search by postcode"
               value={searchZip}
-            // onChange={onChangeSearchZip}
+              onChange={e => setSearchZip(e.target.value)}
+              onFocus={e => setSearchName("")}
             />
             <div className="input-group-append">
               <button
                 className="btn btn-outline-secondary"
                 type="button"
-              //onClick={findByZip}
+                onClick={search}
               >
                 Search
               </button>
@@ -98,26 +89,16 @@ const Makers = () => {
           </div>
           <div className="searchDropdown">
             <select onChange={onChangeSearchClothesItem}>
-            
               {filteredData.map((maker, index) => {
                 return (
                   <option value={maker.clothesItem} key={index}> {maker.clothesItem.substring(0, 20)} </option>
                 )
               })}
             </select>
-            {/* <div className="">
-              <button
-                className="btn btn-outline-secondary"
-                type="button"
-              // onClick={findByClothesItem}
-              >
-                Search
-              </button>
-            </div> */}
           </div>
         </div>
         <div className="makersCards">
-          <MakersCards filter={filter}/>
+          <MakersCards filter={filter} />
         </div>
       </div>
     </div>

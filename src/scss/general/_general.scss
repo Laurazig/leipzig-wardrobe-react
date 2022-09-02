@@ -48,6 +48,13 @@ a {
     color: white;
     font-size: small;
 }
+#a_makers_name{
+    color:rgb(53, 52, 52);
+    font-size:medium;
+    & hover{
+        color: colors.$button-color;
+    }
+}
 
 label,
 strong {
