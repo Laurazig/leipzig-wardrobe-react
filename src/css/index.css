@@ -146,4 +146,13 @@ iframe {
   height: 480px;
 }
 
+body {
+  background-image: url("../Assets/sewing.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: brown;
+  font-size: 1.6rem;
+}
+
 /*# sourceMappingURL=index.css.map */
