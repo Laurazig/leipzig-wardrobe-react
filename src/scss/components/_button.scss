@@ -1,15 +1,17 @@
-@use '../abstracts/' as * ;
+@use '../abstracts/' as *;
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
-    height: 40px;
+    height: 30px;
     background-color: $button-bg;
-    border-radius: 10px;
-    box-shadow: 0 0 7px 5px $button-shadow;
+    border-radius: 5px;
     margin: 40px;
     color: $button-text;
-}
+    
 
+    @include hover-lift();
+
+}

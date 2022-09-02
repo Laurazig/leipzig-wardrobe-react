@@ -1,5 +1,6 @@
 @use '../abstracts/colors';
 @use '../abstracts/fonts';
+@use '../abstracts/mixins';
 
 :root {
     font-size: fonts.$font-size_62;
@@ -84,6 +85,5 @@ input {
 }
 
 iframe {
-    width: 640px;
-    height: 480px
+ @include mixins.mapSize()
 }

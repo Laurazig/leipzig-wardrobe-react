@@ -1,5 +1,6 @@
 import React from "react";
 import makersDB from "../../data.json"
+import Button from '@mui/material/Button';
 
 const MakersCards = props => {
     console.log(props.filter)
@@ -9,8 +10,11 @@ const MakersCards = props => {
                 {
                    makersDB.filter(maker=>(maker.clothesItem=== props.filter)||(maker.name.includes(props.filter))||(maker.address.postcode=== props.filter)|| props.filter === "").map((maker, index) => {
                         const address = `${maker.address.building} ${maker.address.street}, ${maker.address.postcode}`;
+                        
                         return (
-                            <li key={index} >
+                            
+                        
+                        <li key={index} >
                                 <div className="workshopCard">
                                     <div className="makerLabel"><strong>Name: </strong></div>
                                     <div><a href={maker.url} target="_blank" rel="noreferrer" id="a_makers_name">{maker.name}</a>  </div>
