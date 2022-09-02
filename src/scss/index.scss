@@ -1,33 +1,19 @@
 @forward './abstracts/colors';
 @forward './abstracts/fonts';
+@forward './abstracts/mixins';
 @forward './components/button';
 @forward './components/card';
 @forward './components/footer';
 @forward './components/nav';
+@forward './general/general';
+@forward './layout/layout';
 @forward './mediaQ/all.scss';
-
-@use './abstracts/fonts';
-
-:root {
-    font-size: fonts.$font-size_62;
-}
-
-* {
-    font-family: 'Montserrat', sans-serif;
-}
 
 .App {
     text-align: center;
 }
 
-body {
-    background-image: url('../Assets/sewing.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: brown;
-    font-size: 1.6rem;
-}
+
 
 .containerMain {
     display: flex;

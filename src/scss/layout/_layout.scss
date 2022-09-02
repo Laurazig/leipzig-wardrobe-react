@@ -1,0 +1,11 @@
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
+
+body {
+    background-image: url('../Assets/sewing.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: colors.$button-color;
+    font-size: fonts.$font-size_body;
+}

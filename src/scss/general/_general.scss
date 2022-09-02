@@ -1,0 +1,9 @@
+@use '../abstracts/fonts';
+
+:root {
+    font-size: fonts.$font-size_62;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}

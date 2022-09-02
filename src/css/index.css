@@ -66,6 +66,23 @@ nav li a {
   color: brown;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("../Assets/sewing.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: brown;
+  font-size: 1.6rem;
+}
+
 @media (max-width: 479px) {
   #leipzigWardHeader {
     padding: 2rem;
@@ -117,25 +134,8 @@ nav li a {
     margin: 0.5rem;
   }
 }
-:root {
-  font-size: 62.5%;
-}
-
-* {
-  font-family: "Montserrat", sans-serif;
-}
-
 .App {
   text-align: center;
-}
-
-body {
-  background-image: url("../Assets/sewing.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  color: brown;
-  font-size: 1.6rem;
 }
 
 .containerMain {
