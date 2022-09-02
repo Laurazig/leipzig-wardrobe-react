@@ -1,42 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap");
 .button {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 40px;
-  background-color: brown;
-  border-radius: 20px;
-  box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
-  margin: 40px;
-  color: white;
-}
-
-.buttonMakerMap {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100px;
   height: 40px;
   background-color: brown;
-  border-radius: 20px;
-  box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
-  color: white;
-  margin-top: 20px;
-}
-
-#buttonMakerLink {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  bottom: 20px;
-}
-
-#buttonAdd {
-  background-color: brown;
-  width: 100px;
-  height: 40px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
   margin: 40px;
   color: white;
@@ -61,16 +31,14 @@
   display: flex;
   justify-content: center;
 }
-
-#workshopListUL {
+.cardContainer #workshopListUL {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   /* background-color: rgba(255, 255, 255, 0.5); */
   width: 99%;
 }
-
-.workshopCard {
+.cardContainer #workshopListUL .workshopCard {
   color: gray;
   background-color: rgba(255, 255, 255, 0.733);
   width: 200px;
@@ -79,31 +47,28 @@
   font-size: 1.6rem;
   padding: 10px;
   overflow: hidden;
+  /* #workshopCardInside{
+      background-color: aquamarine;
+      height: 100%; 
+    } */
 }
-
-/* #workshopCardInside{
-  background-color: aquamarine;
-  height: 100%; 
-} */
-.makerLabel {
+.cardContainer #workshopListUL .workshopCard .makerLabel {
   background-color: rgba(0, 0, 0, 0.096);
   margin: 0.5rem;
 }
 
-nav {
+.nav nav {
   background-color: rgba(0, 0, 0, 0.831);
   padding: 3rem;
   margin: 3rem;
 }
-nav li a {
+.nav nav li .liNav {
   text-decoration: none;
   font-size: 4rem;
-  color: white;
-  transition: color 0.3s ease-in-out;
 }
-
-.liNav hover {
+.nav nav li .liNav:hover {
   color: brown;
+  transition: color 0.3s ease-in-out;
 }
 
 :root {

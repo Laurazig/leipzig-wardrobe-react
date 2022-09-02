@@ -1,21 +1,28 @@
 @use '../abstracts/colors' as *;
 
-nav {
-    background-color: rgba(0, 0, 0, 0.831);
-    padding: 3rem;
-    margin: 3rem;
-    & li {
-        & a {
-            text-decoration: none;
-            font-size: 4rem;
-            color: white;
-            transition: color 0.3s ease-in-out;
-        }
+.nav {
+    #leipzigWardHeader {
     }
+        nav {
+            background-color: $navbar-bg;
+            padding: 3rem;
+            margin: 3rem;
+                li {
+                    .liNav {
+                        text-decoration: none;
+                        font-size: 4rem;
+                        //color: green;
+                        &:hover {
+                            color: $navbar-hover;
+                            transition: color 0.3s ease-in-out;
+                            //transform: translate(0.5rem);
+                            
+                        }
+                    }
+                }
+        }
+
+
 }
 
-.liNav{
-    & hover{
-        color: $button-color;
-    }
-} 
+

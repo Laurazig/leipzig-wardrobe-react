@@ -67,7 +67,7 @@ const Form = props => {
                         </div>
                     </div>
                     <div className="form_div">
-                        <button id="buttonAdd">add</button>
+                        <button className="button">add</button>
                     </div>
                 </form>
             </div>

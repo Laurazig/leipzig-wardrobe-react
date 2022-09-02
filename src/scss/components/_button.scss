@@ -1,44 +1,15 @@
 @use '../abstracts/' as * ;
 
 .button {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 40px;
-    background-color: $button-color;
-    border-radius: 20px;
-    box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
-    margin: 40px;
-    color: white;
-}
-
-.buttonMakerMap {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 40px;
-    background-color: $button-color;
-    border-radius: 20px;
-    box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
-    color: white;
-    margin-top: 20px;
-}
-
-#buttonMakerLink {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    bottom: 20px;
-}
-
-#buttonAdd {
-    background-color: $button-color;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
+    background-color: $button-bg;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 5px $button-shadow;
     margin: 40px;
-    color: white;
+    color: $button-text;
 }
+

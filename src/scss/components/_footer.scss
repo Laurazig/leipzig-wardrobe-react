@@ -1,7 +1,9 @@
+@use '../abstracts/colors' as *;
+
 #foot {
-    background-color: rgba(0, 0, 0, 0.831);
+    background-color: $navbar-bg;
     padding: 3rem;
     margin: 3rem;
     font-size: 3rem;
-    color: white;
+    color: $navbar-text;
   }

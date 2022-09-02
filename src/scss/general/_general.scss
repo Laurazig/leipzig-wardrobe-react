@@ -52,13 +52,13 @@ a {
     color:rgb(53, 52, 52);
     font-size:medium;
     & hover{
-        color: colors.$button-color;
+        color: colors.$button-bg;
     }
 }
 
 label,
 strong {
-    color: colors.$button-color;
+    color: colors.$button-bg;
 }
 
 #addNewWorkshopCard {
@@ -73,7 +73,7 @@ strong {
 }
 
 #h2AddWorkshop {
-    color: colors.$button-color;
+    color: colors.$button-bg;
 }
 
 input {

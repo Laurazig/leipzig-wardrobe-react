@@ -1,17 +1,15 @@
 import React from "react";
-//import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
         <div id="foot">
-            <h3>Instagram</h3>
-            {/* <nav>
+            <nav>
                 <ul>
                     <li >
-                    <Link to="/" className="liNav">instagram</Link>
+                        <a href="https://www.instagram.com/leipzig.wardrobe/" target="_blank" rel="noreferrer" >insta</a>
                     </li>
                 </ul>
-            </nav> */}
+            </nav>
         </div>
     )
 }
