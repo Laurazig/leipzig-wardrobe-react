@@ -5,8 +5,9 @@ import Footer from "./Components/Footer.jsx"
 import Home from "./Views/Home.jsx"
 import Makers from "./Views/makers/Makers.jsx"
 import Workshops from "./Views/Workshops.jsx"
-import './App.scss'
+import './css/index.css'
 import NotFound from "./Views/NotFound.jsx"
+
 
 
 //state for: add new workshop (form.js)
