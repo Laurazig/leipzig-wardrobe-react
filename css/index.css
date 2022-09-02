@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap");
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: brown;
+  border-radius: 20px;
+  box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
+  margin: 40px;
+  color: white;
+}
+
+.buttonMakerMap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: brown;
+  border-radius: 20px;
+  box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
+  color: white;
+  margin-top: 20px;
+}
+
+#buttonMakerLink {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  bottom: 20px;
+}
+
+#buttonAdd {
+  background-color: brown;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 7px 5px rgba(128, 128, 128, 0.507);
+  margin: 40px;
+  color: white;
+}
+
+#foot {
+  background-color: rgba(0, 0, 0, 0.831);
+  padding: 3rem;
+  margin: 3rem;
+  font-size: 3rem;
+  color: white;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.831);
+  padding: 3rem;
+  margin: 3rem;
+}
+nav li a {
+  text-decoration: none;
+  font-size: 4rem;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.liNav hover {
+  color: brown;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,9 +1,11 @@
+@use '../abstracts/colors' as *;
+
 nav {
     background-color: rgba(0, 0, 0, 0.831);
     padding: 3rem;
     margin: 3rem;
     & li {
-        &a {
+        & a {
             text-decoration: none;
             font-size: 4rem;
             color: white;
@@ -13,7 +15,7 @@ nav {
 }
 
 .liNav{
-    &hover{
-        color: brown;
+    & hover{
+        color: $button-color;
     }
 } 
